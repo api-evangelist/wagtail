@@ -78,6 +78,10 @@ common:
     url: rate-limits/wagtail-rate-limits.yml
   - type: FinOps
     url: finops/wagtail-finops.yml
+  - type: BlogPosts
+    url: blogs/blogs.json
+  - type: JsonLD
+    url: json-ld/wagtail.json
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://wagtail.org",
+  "name": "Wagtail",
+  "description": "Wagtail is a leading open-source Python content management system built on Django. It provides a REST API v2 for accessing pages, images, documents, snippets, and custom content types in both headless and traditional deployments.",
+  "url": "https://wagtail.org",
+  "applicationCategory": "ContentManagementSystem",
+  "operatingSystem": "Linux, macOS, Windows",
+  "programmingLanguage": "Python",
+  "license": "https://github.com/wagtail/wagtail/blob/main/LICENSE",
+  "sameAs": [
+    "https://github.com/wagtail",
+    "https://twitter.com/WagtailCMS",
+    "https://www.linkedin.com/company/wagtail-cms"
+  ],
+  "maintainer": {
+    "@type": "Organization",
+    "name": "Wagtail Community",
+    "url": "https://wagtail.org",
+    "email": "hello@wagtail.org",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "url": "https://wagtail.org/slack",
+      "contactType": "Community Support"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://wagtail.org/services/",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Open-source; commercial support and services available."
+  },
+  "hasPart": [
+    {
+      "@type": "WebAPI",
+      "name": "Wagtail API v2",
+      "description": "The Wagtail REST API v2 exposes site content — pages, images, documents, and redirects — as JSON. Supports filtering, search, field selection, and pagination.",
+      "url": "https://docs.wagtail.org/en/latest/advanced_topics/api/v2/usage.html",
+      "documentation": "https://docs.wagtail.org/en/latest/advanced_topics/api/",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "name": "List Pages",
+          "urlTemplate": "https://{your-wagtail-site}/api/v2/pages/?{query}"
+        },
+        {
+          "@type": "SearchAction",
+          "name": "List Images",
+          "urlTemplate": "https://{your-wagtail-site}/api/v2/images/?{query}"
+        },
+        {
+          "@type": "SearchAction",
+          "name": "List Documents",
+          "urlTemplate": "https://{your-wagtail-site}/api/v2/documents/?{query}"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    "CMS",
+    "Content Management",
+    "Django",
+    "Python",
+    "Headless CMS",
+    "Open Source",
+    "REST API",
+    "Pages",
+    "Images",
+    "Documents"
+  ]
+}
