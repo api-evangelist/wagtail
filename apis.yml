@@ -1,0 +1,83 @@
+aid: wagtail
+name: Wagtail
+description: >
+  Wagtail is a leading open-source Python content management system built on
+  Django. It provides a REST API v2 for accessing pages, images, documents,
+  snippets, and custom content types in both headless and traditional
+  deployments. The API delivers JSON-formatted content to web, mobile, and
+  other non-web clients, supporting filtering, full-text search, field
+  selection, and pagination. Wagtail is used by NASA, Google, NHS, Mozilla,
+  MIT, and thousands of other organisations worldwide.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/wagtail/refs/heads/main/apis.yml
+created: 2026-06-13
+modified: 2026-06-13
+specificationVersion: "0.19"
+tags:
+  - CMS
+  - Content Management
+  - Django
+  - Python
+  - Headless CMS
+  - Open Source
+  - REST API
+  - Pages
+  - Images
+  - Documents
+apis:
+  - aid: wagtail:wagtail-api-v2
+    name: Wagtail API v2
+    description: >
+      The Wagtail REST API v2 exposes site content — pages, images, documents,
+      and redirects — as JSON. Endpoints support filtering by field value, tree
+      relationships (child_of, ancestor_of, descendant_of), locale, and site.
+      Full-text search, field selection, and cursor-based pagination via limit
+      and offset are built in. Custom page models can expose additional fields
+      through the api_fields attribute. Authentication is optional and
+      configurable via Django REST Framework.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.wagtail.org/en/latest/advanced_topics/api/
+    baseURL: https://{your-wagtail-site}/api/v2/
+    tags:
+      - CMS
+      - Content Management
+      - Pages
+      - Images
+      - Documents
+      - REST API
+      - Django
+      - Python
+      - Headless CMS
+    properties:
+      - type: Documentation
+        url: https://docs.wagtail.org/en/latest/advanced_topics/api/v2/usage.html
+      - type: Configuration
+        url: https://docs.wagtail.org/en/latest/advanced_topics/api/v2/configuration.html
+    contact:
+      - FN: Wagtail Community
+        url: https://wagtail.org/slack
+        email: hello@wagtail.org
+common:
+  - type: Website
+    url: https://wagtail.org
+  - type: Documentation
+    url: https://docs.wagtail.org/en/latest/advanced_topics/api/
+  - type: GitHubOrg
+    url: https://github.com/wagtail
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/wagtail-cms
+  - type: Blog
+    url: https://wagtail.org/blog/
+  - type: Pricing
+    url: https://wagtail.org/services/
+  - type: X
+    url: https://twitter.com/WagtailCMS
+  - type: Plans
+    url: plans/wagtail-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/wagtail-rate-limits.yml
+  - type: FinOps
+    url: finops/wagtail-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,54 @@
+name: Wagtail Plans and Pricing
+description: >
+  Wagtail is a free, open-source CMS licensed under BSD-3-Clause. There is no
+  official SaaS pricing model from the Wagtail core project itself. Costs are
+  incurred through self-hosting or third-party managed hosting partners.
+url: https://wagtail.org/services/
+plans:
+  - name: Open Source (Self-Hosted)
+    type: free
+    description: >
+      Download and self-host Wagtail at no cost. Requires a Python/Django
+      environment and a database (PostgreSQL recommended). All core features
+      including the REST API v2 are included.
+    price: 0
+    currency: USD
+    features:
+      - Full Wagtail CMS functionality
+      - REST API v2 (pages, images, documents, snippets)
+      - StreamField content blocks
+      - Multi-site and multi-language support
+      - Image and document management
+      - Full-text search integration
+      - Headless CMS capabilities
+  - name: Torchbox Managed Hosting
+    type: commercial
+    description: >
+      24/7 support and scalable, performant, resilient managed cloud hosting
+      optimised for Wagtail, provided by Torchbox (UK/US).
+    price: contact
+    url: https://torchbox.com/wagtail-cms/
+  - name: CodeRed Cloud Hosting
+    type: commercial
+    description: >
+      Managed Wagtail hosting with dashboard management, USA-based support,
+      and migration services.
+    price: contact
+    url: https://www.codered.cloud/
+  - name: Divio Cloud Hosting
+    type: commercial
+    description: >
+      Optimized hosting and cloud management across multiple global regions.
+    price: contact
+    url: https://www.divio.com/
+  - name: Developer Support Subscription
+    type: commercial
+    description: >
+      Developer support subscriptions from the core team covering code reviews,
+      planning complex features, pair programming, and hosting setup.
+    price: contact
+    url: https://wagtail.org/services/
+notes: >
+  Wagtail encourages sponsorship for feature development rather than
+  traditional software licensing. As an open-source project there are no
+  per-API-call fees or usage-based charges for the built-in REST API.

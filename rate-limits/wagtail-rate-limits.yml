@@ -1,0 +1,39 @@
+name: Wagtail API Rate Limits
+description: >
+  Wagtail's built-in REST API v2 does not impose rate limits at the framework
+  level. Any rate limiting is the responsibility of the operator deploying the
+  CMS and is typically enforced via a reverse proxy (nginx, Caddy), a CDN, or
+  Django middleware. The following documents Wagtail's built-in pagination and
+  result-limit controls, which are the closest framework-level constraints.
+url: https://docs.wagtail.org/en/latest/advanced_topics/api/v2/configuration.html
+framework_limits:
+  - name: WAGTAILAPI_LIMIT_MAX
+    description: >
+      Maximum number of results returned per API request. Operators can
+      increase or remove this limit via the WAGTAILAPI_LIMIT_MAX Django
+      setting. Setting to null removes the upper bound entirely.
+    default: 20
+    configurable: true
+    setting: WAGTAILAPI_LIMIT_MAX
+  - name: Pagination offset
+    description: >
+      Clients page through results using ?limit and ?offset query parameters.
+      No hard cap on total pages; governed by WAGTAILAPI_LIMIT_MAX per page.
+    parameters:
+      - name: limit
+        default: 20
+        max: WAGTAILAPI_LIMIT_MAX
+      - name: offset
+        default: 0
+operator_guidance:
+  - Use a reverse proxy such as nginx or Caddy to enforce per-IP rate limits.
+  - Use a CDN (Cloudflare, Fastly, AWS CloudFront) with rate-limiting rules
+    for public-facing deployments.
+  - Django middleware packages such as django-ratelimit can be added to
+    enforce application-layer rate limiting.
+  - Token authentication (via Django REST Framework TokenAuthentication) can
+    be used to restrict API access to known clients.
+notes: >
+  Because Wagtail is self-hosted open-source software, rate limits are
+  entirely operator-defined. There are no vendor-imposed per-minute or
+  per-day call quotas.

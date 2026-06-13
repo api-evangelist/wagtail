@@ -1,0 +1,61 @@
+name: Wagtail FinOps
+description: >
+  Wagtail is a free, open-source CMS with no vendor usage fees or metered
+  billing. FinOps considerations apply entirely to the infrastructure chosen
+  by the operator (server compute, storage, CDN, database). The notes below
+  guide cost estimation and optimisation for common Wagtail deployment
+  patterns.
+url: https://wagtail.org/services/
+cost_model: self-hosted-open-source
+vendor_fees: none
+infrastructure_cost_drivers:
+  - name: Compute
+    description: >
+      Web/application server (gunicorn, uvicorn, or uwsgi behind nginx).
+      Vertically or horizontally scalable. A small Wagtail site can run on a
+      shared or low-cost VPS; high-traffic deployments benefit from auto-scaled
+      container clusters (ECS, GKE, Fly.io).
+  - name: Database
+    description: >
+      PostgreSQL is the recommended database. Managed options include AWS RDS,
+      Google Cloud SQL, and Supabase. Storage costs grow with content volume.
+  - name: Media Storage
+    description: >
+      Images and documents are typically stored on a cloud object store
+      (AWS S3, Google Cloud Storage, Azure Blob). Costs depend on storage
+      volume and egress.
+  - name: Search Backend
+    description: >
+      Wagtail supports Elasticsearch and OpenSearch for full-text search.
+      Managed search clusters add ongoing compute costs. The built-in
+      database search backend (no extra cost) suits smaller deployments.
+  - name: CDN
+    description: >
+      A CDN (Cloudflare, AWS CloudFront, Fastly) is recommended for
+      production. Caches API responses and static assets, reducing origin
+      server load and egress costs.
+  - name: Cache Layer
+    description: >
+      Redis or Memcached for Django caching reduces database queries and
+      improves API response times. Managed cache services carry hourly fees.
+optimisation_tips:
+  - Cache API responses at the CDN or application layer to reduce compute load.
+  - Use Wagtail image rendition caching to avoid re-processing images on
+    every request.
+  - Enable WAGTAILAPI_LIMIT_MAX conservatively to avoid unbounded queries.
+  - Choose the database-backed search backend for small sites to avoid
+    maintaining an Elasticsearch cluster.
+  - Use object lifecycle policies on S3/GCS to expire unused renditions.
+managed_hosting_partners:
+  - name: Torchbox
+    url: https://torchbox.com/wagtail-cms/
+  - name: CodeRed Cloud
+    url: https://www.codered.cloud/
+  - name: Divio
+    url: https://www.divio.com/
+sponsorship:
+  description: >
+    The Wagtail project accepts sponsorships that fund core development.
+    Organisations depending on Wagtail commercially are encouraged to
+    sponsor via GitHub Sponsors or Open Collective.
+  url: https://wagtail.org/sponsor/
