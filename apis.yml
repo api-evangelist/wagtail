@@ -8,7 +8,7 @@ description: >
   other non-web clients, supporting filtering, full-text search, field
   selection, and pagination. Wagtail is used by NASA, Google, NHS, Mozilla,
   MIT, and thousands of other organisations worldwide.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/wagtail/refs/heads/main/apis.yml
 created: 2026-06-13
 modified: 2026-06-13
@@ -35,7 +35,7 @@ apis:
       and offset are built in. Custom page models can expose additional fields
       through the api_fields attribute. Authentication is optional and
       configurable via Django REST Framework.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.wagtail.org/en/latest/advanced_topics/api/
     baseURL: https://{your-wagtail-site}/api/v2/
     tags:
