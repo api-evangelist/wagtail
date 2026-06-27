@@ -80,7 +80,7 @@ common:
     url: finops/wagtail-finops.yml
   - type: BlogPosts
     url: blogs/blogs.json
-  - type: JsonLD
+  - type: JSONLD
     url: json-ld/wagtail.json
 maintainers:
   - FN: Kin Lane

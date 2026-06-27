@@ -1,97 +1,18 @@
 {
-  "aid": "wagtail",
-  "url": "https://wagtail.org/blog/",
-  "retrieved": "2026-06-13",
-  "posts": [
-    {
-      "title": "How you can use Wagtail to optimize your images",
-      "url": "https://wagtail.org/blog/how-you-can-use-wagtail-to-optimize-your-images/",
-      "date": "2026-06-12",
-      "description": "Explores image optimization strategies with and without AI tooling in Wagtail."
-    },
-    {
-      "title": "Wagtail accessibility statistics for GAAD 2026",
-      "url": "https://wagtail.org/blog/wagtail-accessibility-statistics-for-gaad-2026/",
-      "date": "2026-05-19",
-      "description": "Five years of Wagtail accessibility data. 2026 is the first year all metrics improved."
-    },
-    {
-      "title": "Results of the 2026 Wagtail DX with AI survey",
-      "url": "https://wagtail.org/blog/2026-ai-dx-survey/",
-      "date": "2026-05-13",
-      "description": "Overview of AI adoption for Developer Experience in the Wagtail ecosystem."
-    },
-    {
-      "title": "Our four contributors for Google Summer of Code 2026",
-      "url": "https://wagtail.org/blog/contributors-for-google-summer-of-code-2026/",
-      "date": "2026-05-13",
-      "description": "Four GSoC 2026 projects focusing on Starter Kit, Bakery Demo, User Guide, and translation scaling."
-    },
-    {
-      "title": "Join us for Wagtail Space NL 2026",
-      "url": "https://wagtail.org/blog/wagtail-space-nl-2026/",
-      "date": "2026-05-12",
-      "description": "Code, coffee, and community at Q42 in Rotterdam."
-    },
-    {
-      "title": "A customizable page explorer and other quality improvements in Wagtail 7.4",
-      "url": "https://wagtail.org/blog/wagtail-74/",
-      "date": "2026-05-05",
-      "description": "Features autosave improvements, new sorting options, and content checker upgrades in Wagtail 7.4."
-    },
-    {
-      "title": "Independent security audit: findings and next steps",
-      "url": "https://wagtail.org/blog/independent-security-audit-findings-and-next-steps/",
-      "date": "2026-05-04",
-      "description": "Results and recommendations from Wagtail's first independent security audit."
-    },
-    {
-      "title": "Wagtail's 2025 carbon footprint",
-      "url": "https://wagtail.org/blog/wagtails-2025-carbon-footprint/",
-      "date": "2026-04-30",
-      "description": "Measurement of Wagtail's environmental impact to guide reduction strategies."
-    },
-    {
-      "title": "Save the Earth: Delete your Stuff!",
-      "url": "https://wagtail.org/blog/delete-your-stuff/",
-      "date": "2026-04-22",
-      "description": "Simple strategies for reducing personal carbon footprint for Earth Day."
-    },
-    {
-      "title": "The carbon footprint of Wagtail AI",
-      "url": "https://wagtail.org/blog/the-carbon-footprint-of-wagtail-ai/",
-      "date": "2026-04-16",
-      "description": "Analysis of energy consumption and emissions from routine AI tasks in Wagtail."
-    },
-    {
-      "title": "What AI tools get right and wrong with Wagtail",
-      "url": "https://wagtail.org/blog/what-ai-tools-get-right-and-wrong-with-wagtail/",
-      "date": "2025-08-07",
-      "description": "Assessment of AI tool usefulness for Wagtail project development."
-    },
-    {
-      "title": "Introducing the new starter kit for Wagtail CMS",
-      "url": "https://wagtail.org/blog/new-starter-kit-for-wagtail-cms/",
-      "date": "2024-10-18",
-      "description": "Demonstrates rapid deployment capabilities for launching a Wagtail site."
-    },
-    {
-      "title": "PATH.org: A WordPress to Wagtail migration story for a leader in global health",
-      "url": "https://wagtail.org/blog/pathorg-a-wordpress-to-wagtail-migration-story-for-a-leader-in-global-health/",
-      "date": "2024-09-03",
-      "description": "Case study of organizational transition from WordPress to Wagtail for a global health nonprofit."
-    }
-  ],
   "repo": "wagtail",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/company/wagtail-cms",
-      "feed_url": "https://www.linkedin.com/company/wagtail-cms",
+      "source": "https://wagtail.org/blog/feed/",
+      "feed_url": "https://wagtail.org/blog/feed/",
       "title": "",
-      "saved": 0,
-      "method": "none"
+      "saved": 2,
+      "method": "feed"
+    },
+    {
+      "source": "https://www.linkedin.com/company/wagtail-cms",
+      "error": "HTTPError"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 3
 }
