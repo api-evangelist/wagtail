@@ -58,6 +58,10 @@ apis:
         url: https://wagtail.org/slack
         email: hello@wagtail.org
 common:
+  - type: VulnerabilityDisclosure
+    url: security/wagtail-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/wagtail-domain-security.yml
   - type: Website
     url: https://wagtail.org
   - type: Documentation
