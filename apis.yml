@@ -31,6 +31,17 @@ tags:
   - Django
   - Python
   - Headless CMS
+  - Open-Source
+  - REST API
+  - Pages
+  - Image
+  - Documents
+tags_raw:
+  - CMS
+  - Content Management
+  - Django
+  - Python
+  - Headless CMS
   - Open Source
   - REST API
   - Pages
@@ -51,6 +62,16 @@ apis:
     humanURL: https://docs.wagtail.org/en/latest/advanced_topics/api/
     baseURL: https://{your-wagtail-site}/api/v2/
     tags:
+      - CMS
+      - Content Management
+      - Pages
+      - Image
+      - Documents
+      - REST API
+      - Django
+      - Python
+      - Headless CMS
+    tags_raw:
       - CMS
       - Content Management
       - Pages
