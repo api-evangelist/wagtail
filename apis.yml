@@ -8,6 +8,17 @@ description: >
   other non-web clients, supporting filtering, full-text search, field
   selection, and pagination. Wagtail is used by NASA, Google, NHS, Mozilla,
   MIT, and thousands of other organisations worldwide.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
