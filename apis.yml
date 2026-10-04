@@ -42,7 +42,7 @@ tags:
   - Django
   - Python
   - Headless CMS
-  - Open-Source
+  - Open Source
   - REST API
   - Pages
   - Image
@@ -58,6 +58,7 @@ tags_raw:
   - Pages
   - Images
   - Documents
+  - Open-Source
 apis:
   - aid: wagtail:wagtail-api-v2
     name: Wagtail API v2
