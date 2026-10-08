@@ -56,3 +56,41 @@ notes: >
   Wagtail encourages sponsorship for feature development rather than
   traditional software licensing. As an open-source project there are no
   per-API-call fees or usage-based charges for the built-in REST API.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  units: []
+  plans:
+  - name: Open Source (Self-Hosted)
+    access: free
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Torchbox Managed Hosting
+    access: paid
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: CodeRed Cloud Hosting
+    access: paid
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Divio Cloud Hosting
+    access: paid
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Developer Support Subscription
+    access: paid
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
